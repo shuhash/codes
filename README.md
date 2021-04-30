@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @shuhash
-- 👀 I’m interested in Ethical Hacking, c,python
-- 🌱 I’m currently learning sql
-- 💞️ I’m looking to collaborate on ...
+- 👀 Certified Ethical Hacker,Bug Hunter
+- 🌱 I’m currently learning 
+- 💞️ I’m looking to collaborate on Nothing
 - 📫 How to reach me ...
-An certified Bug Hunter..
+
 
 <!---
 shuhash/shuhash is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
