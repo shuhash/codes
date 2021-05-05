@@ -1,15 +1,6 @@
-def minm(l):
-    s=min(l,key=len)
-    mlen=len(s)
-    i=0
-    while(i<len(l)):
-        print(l[i][:mlen])
-        if(len(l[i])==mlen):
-            l.pop(i)
-            i-=1
-        else:
-            l[i]=l[i][mlen:]
-        i+=1
-a=int(input())
-l=[input().strip()for i in range(a)]
-while(l):minm(l)
+N = int(input())
+L = [input().strip() for i in range(N)]
+while L:
+    l = len(min(L, key = len))
+    [print(i[:l]) for i in L if i]
+    L = [i[l:] for i in L if i[l:]]
