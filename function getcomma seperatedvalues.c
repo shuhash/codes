@@ -2,16 +2,16 @@
 #include <stdlib.h>
 char* getCommaSeparatedValues(int SIZE, int arr[])
 {
-    char *str=malloc(1001*sizeof(char));
-    for(int index=0;index<SIZE;index++){
-        char num[101];
-        sprintf(num,"%d",arr[index]);
-        strcat(str,num);
-        if(index<SIZE-1){
-            strcat(str,",");
+    char *a=malloc(100);
+    for(int i=0;i<SIZE;i++){
+        if(i<SIZE-1){
+            sprintf(&a[strlen(a)],"%d,",arr[i]);
+        }else{
+            sprintf(&a[strlen(a)],"%d",arr[i]);
         }
     }
-    return str;
+    return a;
+
 }
 int main() 
 { 
