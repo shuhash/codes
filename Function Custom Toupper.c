@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include<string.h>
 void *customToUpper(char str[], char fromChar, char toChar)
 {
@@ -9,4 +10,12 @@ void *customToUpper(char str[], char fromChar, char toChar)
         }
     }
     return str;
+}
+int main()
+{
+    char str[101], fromChar, toChar;
+    scanf("%s\n%c %c", str, &fromChar, &toChar);
+    customToUpper(str, fromChar, toChar);
+    printf("Modified String: %s", str);
+    return 0;
 }
