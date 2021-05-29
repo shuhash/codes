@@ -23,21 +23,7 @@ void printAlarmTimings(char startTime[], char endTime[], int X)
       break;
     }
   }
-}
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
+} 
 int main()
 {
   char startTime[7],endTime[7];
