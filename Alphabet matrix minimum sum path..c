@@ -13,7 +13,12 @@ int main()
   int r,c,,X1,X2,Y1,Y2;
   scanf("%d %d\n",&r,&c);
   char mat[r][c];
-  scanf("%s",mat[r][c]);
+   {
+        for(int j=0;j<C;j++)
+        {
+            scanf("%c ",&mat[i][j]);
+        }
+   }
   scanf("\n%d %d\n%d %d",&X1,&Y1,&X2,&Y2);
   X1--; Y1--;
   X2--; Y2--;
@@ -69,7 +74,36 @@ else
   }
   if(sum<mindis) mindis=sum;
   sum=0;
-}
+if(Y1>Y2)
+        {
+            for(int i=Y1;i>=Y2;i--)
+            {
+                sum += tolower(mat[X1][i])-'a'+1;
+            }
+        }
+        else
+        {
+            for(int i=Y1;i<=Y2;i++)
+            {
+                sum += tolower(mat[X1][i])-'a'+1;
+            }
+        }
+        if(X1>X2)
+        {
+            for(int i=X1-1;i>=X2;i--)
+            {
+                sum += tolower(mat[i][Y2])-'a'+1;
+            }
+        }
+        else
+        {
+            for(int i=X1+1;i<=X2;i++)
+            {
+                sum += tolower(mat[i][Y2])-'a'+1;
+            }
+        }
+        if(sum<minDistance) minDistance = sum;
+    }
  printf("%d",mindis);
 }
       
