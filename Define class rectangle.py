@@ -1,13 +1,13 @@
 class Rectangle:
-  RectangleCount,totalArea=0
-  def __init__(self,breadth,length):
+  RectangleCount,totalArea=0,0
+  def __init__(self,length,breadth):
     self.length=length
     self.breadth=breadth
     Rectangle.rectangleCount+=1
     Rectangle.totalArea+=(length*breadth)
-  def __init__(self):
+  def __str__(self):
     retuurn f"Length:{self.length}, Breadth:{self.breadth}, Area:{self.length*self.breadth}"
-  def __init__(self):
+  def __del__(self):
     Rectangle.rectangleCount-=1
     Rectangle.totalArea-=(self.length*self.breadth)
 
@@ -25,5 +25,6 @@ print(Rectangle.rectangleCount)
 print(Rectangle.totalArea) 
 del rectangles[X-1] 
 for rect in rectangles: 
-  print(rect) print(Rectangle.rectangleCount) 
-  print(Rectangle.totalArea)
+  print(rect) 
+print(Rectangle.rectangleCount)
+print(Rectangle.totalArea)
