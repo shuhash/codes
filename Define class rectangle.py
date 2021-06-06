@@ -1,11 +1,11 @@
 class Rectangle:
-  RectangleCount,totalArea=0,0
+  rectangleCount,totalArea=0,0
   def __init__(self,length,breadth):
     self.length=length
     self.breadth=breadth
     Rectangle.rectangleCount+=1
     Rectangle.totalArea+=(length*breadth)
-  def __str__(self):
+  def __repr__(self):
     retuurn f"Length:{self.length}, Breadth:{self.breadth}, Area:{self.length*self.breadth}"
   def __del__(self):
     Rectangle.rectangleCount-=1
@@ -28,3 +28,17 @@ for rect in rectangles:
   print(rect) 
 print(Rectangle.rectangleCount)
 print(Rectangle.totalArea)
+
+
+class Rectangle:
+    rectangleCount,totalArea=0,0
+    def __init__(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+        Rectangle.rectangleCount+=1
+        Rectangle.totalArea+=(length*breadth)
+    def __del__(self):
+        Rectangle.rectangleCount-=1
+        Rectangle.totalArea-=self.length*self.breadth
+    def __str__(self):
+        return "Length:{}, Breadth:{}, Area:{}".format(self.length,self.breadth,self.length*self.breadth)
