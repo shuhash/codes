@@ -1,5 +1,4 @@
 - 👋 Hi, I’m @shuhash
-- 👀 Certified Ethical Hacker,Bug Hunter
 - 🌱 I’m currently learning 
 - 💞️ I’m looking to collaborate on Nothing
 - 📫 How to reach me ...
