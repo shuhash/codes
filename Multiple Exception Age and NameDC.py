@@ -18,3 +18,19 @@ try:
   print(name, age)
 except (MaximumLengthExceededException, NegativeValueException) as e: 
   print(e)        
+
+
+
+
+
+
+or
+
+
+class MaximumLengthExceededException(Exception):
+    def __init__(self,a):
+        self.a=a
+class NegativeValueException(Exception):
+    def __init__(self,a):
+        self.a=a
+
