@@ -14,3 +14,14 @@ public class Hello
 	    
 	}
 }
+
+//input:
+//4
+//first
+//second
+//third
+//fourth
+//Output:
+//first
+//fsecond
+//fsthird
