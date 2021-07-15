@@ -98,20 +98,3 @@ int main()
 
 
 
-
-void findTotalMarks(char *file1name, char *file2name)
-{
-    FILE *f1p=fopen(file1name,"r");
-    FILE *f1w=fopen(file1name,"r+");
-    FILE *f2p=fopen(file2name,"r");
-    int a,b,c;
-    char name[100];
-    while(fscanf(f2p,"%d %d %d",&a,&b,&c)==3){
-        int d=a+b+c;
-        fscanf(f1p,"%s",name);
-        fprintf(f1w,"%s %d\n",name,d);
-    }
-    fclose(f1p);
-    fclose(f1w);
-    fclose(f2p);
-} // end of findTotalMarks function
