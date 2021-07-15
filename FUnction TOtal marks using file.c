@@ -1,4 +1,4 @@
-Function find TotalMarks
+/*Function find TotalMarks
 The function/method find TotalMarks accepts two-arguments file1name and file2name representing the names of two text files. The first file contains a list of student names. The second file contains the marks in three subjects of the
 
 students.
@@ -130,27 +130,7 @@ Here marklist.txt is present in the same folder where the program executes and t
 
 55 89 65
 
-Max Execution Time Limit: 50 millises
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Max Execution Time Limit: 50 millises*/
 
 
 #include <stdio.h>
