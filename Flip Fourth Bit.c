@@ -1,6 +1,6 @@
-Flip Fourth Bit
+Flip Fourth Bit:
 
-The program must accept an integer N as the input. The program must flip (invert) the 4th bit from the end of the binary representation of N. Then the program must print the revised value of N as the output. Please fill in the blanks with code so that the program runs successfully.
+/*The program must accept an integer N as the input. The program must flip (invert) the 4th bit from the end of the binary representation of N. Then the program must print the revised value of N as the output. Please fill in the blanks with code so that the program runs successfully.
 Boundary Condition(s):
 Input Format:
 
@@ -32,19 +32,7 @@ Output:
 
 7
 
-Max Execution Time Limit: 50 millisecs
-
-
-
-
-
-
-
-
-
-
-
-
+Max Execution Time Limit: 50 millisecs*/
 
 #include <stdlib.h>
 #include <stdio.h> 
