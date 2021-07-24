@@ -20,9 +20,15 @@ Even Length Words: -1*/
 
 
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-
-
+typedef struct BoundedArray
+{
+    int SIZE;
+    char **words;
+} boundedArray;
 boundedArray* getEvenLengthWords(char str[])
 {
     boundedArray* evenArray=(boundedArray*)malloc(sizeof(boundedArray*));
@@ -49,4 +55,18 @@ boundedArray* getEvenLengthWords(char str[])
     }
     return evenArray;
     
+}
+
+int main()
+{
+    char str[1001];
+    scanf("%[^\n]", str);
+
+    boundedArray *bArr = getEvenLengthWords(str);
+    printf("Even Length Words:\n");
+    for(int index = 0; index < bArr->SIZE; index++)
+    {
+        printf("%s\n", bArr->words[index]);
+    }
+    return 0;
 }
