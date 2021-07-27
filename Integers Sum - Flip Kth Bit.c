@@ -20,7 +20,44 @@ int main()
       }
       else
       {
-          sum+=(arr[i]^y);
+          sum+=(arr[i]^y#include<stdio.h>
+#include<stdlib.h>
+
+int flipK(int N,int K) 
+{
+    int bitNum=0,output=0;
+    while(N!=0)
+    {
+        int bit = N%2;
+        if(bitNum==K-1)
+        {
+            bit = !bit;
+        }
+        if(bit==1)
+        {
+            output += pow(2,bitNum);
+        }
+        N/=2;
+        bitNum++;
+    }
+    return output;
+}
+int main()
+{
+    int N,K,sum=0;
+    scanf("%d ",&N);
+    int arr[N];
+    for(int i=0;i<N;i++)
+    {
+        scanf("%d ",&arr[i]);
+    }
+    scanf("%d",&K);
+    for(int i=0;i<N;i++)
+    {
+        sum += flipK(arr[i],K);
+    }
+    printf("%d",sum);
+}
       }
    }
   printf("%d",sum);
@@ -29,14 +66,38 @@ int main()
 #include<stdio.h>
 #include<stdlib.h>
 
+int flipK(int N,int K) 
+{
+    int bitNum=0,output=0;
+    while(N!=0)
+    {
+        int bit = N%2;
+        if(bitNum==K-1)
+        {
+            bit = !bit;
+        }
+        if(bit==1)
+        {
+            output += pow(2,bitNum);
+        }
+        N/=2;
+        bitNum++;
+    }
+    return output;
+}
 int main()
-{int n;
-scanf("%d",&n);
-int a[n],s=0,x;
-for(int i=0;i<n;i++)
-scanf("%d",&a[i]);
-scanf("%d",&x);x--;
-for(int i=0;i<n;i++)
-s+=a[i]<1<<x?a[i]:a[i]>>x&1?a[i]-(1<<x):a[i]+(1<<x);
-printf("%d ",s);
+{
+    int N,K,sum=0;
+    scanf("%d ",&N);
+    int arr[N];
+    for(int i=0;i<N;i++)
+    {
+        scanf("%d ",&arr[i]);
+    }
+    scanf("%d",&K);
+    for(int i=0;i<N;i++)
+    {
+        sum += flipK(arr[i],K);
+    }
+    printf("%d",sum);
 }
