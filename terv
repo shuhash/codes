@@ -200,3 +200,37 @@ public class HelloWorld{
                  System.out.print(" "+k+"*");
              }
              System.out.println("
+	     
+	     
+	     
+	     
+	     
+ #include <stdio.h>
+
+int main()
+{
+int n,c=1,val,q=0;
+
+scanf("%d",&n);
+val=n*n;
+for(int i=n;i>=1;i--,printf("\n"))
+{
+    q=0;
+    for(int s=1;s<=n-i;s++)
+    printf(" ");
+    for(int j=1;j<=i;j++)
+    {
+        printf("%d*",c);
+        c++;
+    }
+    for(int j=1;j<=i;j++)
+    {
+        printf("%d*",++val);
+       q++;
+    }
+    val-=q+i-1;
+    
+}
+
+    return 0;
+}
