@@ -1,0 +1,202 @@
+x=int(input())
+l=list(map(int,input().split()))
+y=int(input())
+
+for i in range(y):
+    e=l.pop()
+    l.insert(0,e)
+print(l)
+18BCS4115-Kaushik Karthikeyan K9:37 AM
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
+r=[]
+for i in range(c):
+    b.insert(0,b[-1])
+    b.pop(-1)
+print(*b)
+shashi kanth9:42 AM
+n=int(input())
+a=list(map(int,input().split()))
+x=int(input())
+for i in range(x):
+    b=a.pop()
+    a.insert(0,b)
+print(*a)
+18BIT4001 Aakash R9:42 AM
+n = int(input())
+li = [int(input()) for _ in range(n)]
+r = int(input())
+rotate = r % n
+while(rotate > 0):
+    el = li.pop()
+    li.insert(0,el)
+    rotate -= 1
+print(li)
+18BCS4073 Priyadharshini V9:43 AM
+a=int(input())
+l=list(map(int,input().split()))
+b=int(input())
+l= l[-b:] + l[:-b] 
+print(l)
+GOWTHAM SUKUMAR 18BIT40299:53 AM
+Output varla sir
+18BIT4106 - yuvaraj v10:07 AM
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int arr[] = new int[n];
+        int d = scan.nextInt();
+        for(int i=0; i<n;i++)
+        {
+            arr[(i+n-d)%n] = scan.nextInt();
+        }
+        for(int i=0; i<n;i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+18BIT4001 Aakash R10:08 AM
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner Sc = new Scanner(System.in);
+		int n = Sc.nextInt();
+		ArrayList<Integer> list = new ArrayList();
+		List<Integer> copy = new ArrayList();
+		for(int i = 0 ;i<n;i++) list.add(Sc.nextInt());
+		int r = Sc.nextInt();
+		int rotate = r % n;
+		copy = list.subList(rotate,n);
+		copy.addAll(list.subList(0,rotate));
+		System.out.println(copy);
+		
+		
+	}
+TERV10:10 AM
+https://onlinegdb.com/iS9RUURpl
+18BIT4055 Nishithraa N10:12 AM
+Don't knw  sir
+18BIT4106 - yuvaraj v10:12 AM
+no sir
+18BCS4037- KAVIN P10:12 AM
+no sir
+18BIT4071- SALINI M11:01 AM
+Once more time sir
+18BIT4071- SALINI M11:05 AM
+Ss sir
+18BCS4115-Kaushik Karthikeyan K11:12 AM
+n-1
+18BCS4001- Aarthi J11:27 AM
+Yes sir
+18BIT4015-Bhuvaneshwari P11:27 AM
+yes sir
+18BCS4115-Kaushik Karthikeyan K11:27 AM
+yes sir
+18BCS4037- KAVIN P11:27 AM
+yes sir
+18BCS4060 Neethiga S11:27 AM
+Yes sir
+18BIT4104 VIMAL S11:27 AM
+yes sir
+18BCS4016- Devisha T11:27 AM
+yes sir
+18BCS4038- KAVYADHARSINI P11:27 AM
+yes sir
+18BIT4043-Kaviyarasu B11:27 AM
+Yes sir
+18BCS4115-Kaushik Karthikeyan K11:35 AM
+
+import java.util.Scanner;
+
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int c=0;
+		while(a!=0){
+		    a=a/2;
+		    c+=1;
+		}
+		System.out.println(c);
+	}
+}
+18BIT4055 Nishithraa N11:37 AM
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Scanner s= new Scanner(System.in);
+		int n=s.nextInt();
+		int cnt=0;
+		while(n>0){
+		    n=n/2;
+		    cnt++;
+		}
+		System.out.println(cnt);
+	}
+}
+18BCS4001- Aarthi J11:39 AM
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int n=sc.nextInt();
+		int c=0;
+		while(n>0){
+		    n=n/2;
+		    c++;
+		}
+		System.out.println(c);
+	}
+18BCS4115-Kaushik Karthikeyan K12:11 PM
+a=int(input())
+ar=[]
+for i in range(1,(a*2)+1):
+    if i%2==0:
+        ar.append(i)
+d=sum(ar)
+lis=[]
+for i in range(1,d+1):
+    lis.append(i)
+c=0
+z=d-1    
+ar=ar[::-1]
+for i in range(len(ar)):
+    for j in range(1,ar[i]+1):
+        if(j<=ar[i]//2):
+            print("%d*"%lis[c],end="")
+            c+=1
+        else:
+            print("%d*"%lis[z],end="")
+            z-=1
+    print("")        
+    
+GOWTHAM SUKUMAR 18BIT402912:15 PM
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+         Scanner sc=new Scanner (System.in);
+         int n=sc.nextInt();
+         int t=0;
+         for(int i=1;i<=n;i++)
+         {   
+             
+             for(int j=i;j<=n;j++)
+             {
+                 System.out.print(" "+j+"*");
+             }
+             for(int k=n+1-i;k>0;k--)
+             {
+                 System.out.print(" "+k+"*");
+             }
+             System.out.println("
